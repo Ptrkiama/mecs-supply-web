@@ -12,9 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ba53eb55-9a4f-49cc-9682-1d123e936b74.png" 
+                alt="Mecs General Supply Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">Mecs General Supply</h3>
                 <p className="text-sm text-gray-400">Clearing & Forwarding</p>

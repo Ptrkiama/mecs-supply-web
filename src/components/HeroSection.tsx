@@ -72,9 +72,11 @@ const HeroSection = () => {
 
           <div className="relative">
             <div className="bg-white/95 backdrop-blur-sm rounded-lg p-8 border-2 border-secondary/20 shadow-2xl">
-              <div className="mgs-logo w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">MGS</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ba53eb55-9a4f-49cc-9682-1d123e936b74.png" 
+                alt="Mecs General Supply Logo" 
+                className="w-16 h-16 mx-auto mb-4 object-contain"
+              />
               
               <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Our Services</h3>
               <div className="space-y-4">

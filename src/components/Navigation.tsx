@@ -46,9 +46,11 @@ const Navigation = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="mgs-logo w-12 h-12 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MGS</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ba53eb55-9a4f-49cc-9682-1d123e936b74.png" 
+                alt="Mecs General Supply Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Mecs General Supply</h1>
                 <p className="text-xs text-primary font-semibold">NATIONAL & INTERNATIONAL</p>
