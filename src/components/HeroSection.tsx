@@ -1,82 +1,117 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowDown, CheckCircle } from 'lucide-react';
+import { ArrowDown, CheckCircle, Plane, Ship, Truck } from 'lucide-react';
 
 const HeroSection = () => {
   const features = [
     'Licensed Customs Clearance',
-    'Fast & Reliable Service',
+    'Safe & Fast Transportation',
     '24/7 Customer Support',
     'Competitive Rates'
   ];
 
   return (
-    <section className="hero-gradient text-white py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-black opacity-10"></div>
+    <section className="containers-bg relative min-h-screen flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="text-white">
+            <div className="hot-deal-banner inline-block px-6 py-2 mb-6">
+              <span className="text-white font-bold text-sm">HOT DEAL</span>
+            </div>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Your Trusted Partner in 
-              <span className="text-secondary"> Clearing & Forwarding</span>
+              <span className="text-secondary block">MECS</span>
+              <span className="text-secondary block">GENERAL SUPPLY</span>
+              <span className="text-white text-2xl md:text-3xl block mt-2">NATIONAL & INTERNATIONAL</span>
             </h1>
-            <p className="text-xl mb-8 text-white/90 leading-relaxed">
-              Streamline your imports and exports with Tanzania's premier clearing and forwarding service. 
-              Expert customs clearance, freight forwarding, and logistics solutions.
-            </p>
+            
+            <div className="mb-8">
+              <h2 className="text-xl md:text-2xl font-bold text-secondary mb-4">
+                WE MAKE YOUR CARGO TRANSPORTATION
+              </h2>
+              <p className="text-3xl md:text-4xl font-bold text-accent">
+                SAFE & FAST
+              </p>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-black font-semibold">
-                Get Free Quote
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-black font-bold">
+                MAWASILIANO
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-secondary text-secondary hover:bg-secondary hover:text-black font-bold"
               >
-                Learn More
+                Our Services
               </Button>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-secondary" />
-                  <span className="text-sm">{feature}</span>
+                  <span className="text-sm font-medium">{feature}</span>
                 </div>
               ))}
+            </div>
+
+            <div className="flex items-center space-x-6">
+              <div className="floating-element">
+                <Plane className="h-8 w-8 text-secondary" />
+              </div>
+              <div className="floating-element" style={{ animationDelay: '1s' }}>
+                <Ship className="h-8 w-8 text-accent" />
+              </div>
+              <div className="floating-element" style={{ animationDelay: '2s' }}>
+                <Truck className="h-8 w-8 text-secondary" />
+              </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-2xl font-bold mb-4">Why Choose Mecs?</h3>
+            <div className="bg-white/95 backdrop-blur-sm rounded-lg p-8 border-2 border-secondary/20 shadow-2xl">
+              <div className="mgs-logo w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white font-bold text-xl">MGS</span>
+              </div>
+              
+              <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Our Services</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-black font-bold text-sm">
-                    1
+                    ✓
                   </div>
                   <div>
-                    <h4 className="font-semibold">Expert Knowledge</h4>
-                    <p className="text-sm text-white/80">Deep understanding of Tanzanian customs regulations</p>
+                    <h4 className="font-bold text-gray-900">Ordering & Shipping Services</h4>
+                    <p className="text-sm text-gray-600">Complete import/export solutions</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-black font-bold text-sm">
-                    2
+                    ✓
                   </div>
                   <div>
-                    <h4 className="font-semibold">Fast Processing</h4>
-                    <p className="text-sm text-white/80">Quick clearance times to keep your business moving</p>
+                    <h4 className="font-bold text-gray-900">Clearing & Forwarding</h4>
+                    <p className="text-sm text-gray-600">Expert customs clearance</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-black font-bold text-sm">
-                    3
+                    ✓
                   </div>
                   <div>
-                    <h4 className="font-semibold">Transparent Pricing</h4>
-                    <p className="text-sm text-white/80">No hidden fees, clear cost breakdowns</p>
+                    <h4 className="font-bold text-gray-900">Cargo Tracking & Monitoring</h4>
+                    <p className="text-sm text-gray-600">Real-time shipment updates</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-black font-bold text-sm">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Storage & Warehousing</h4>
+                    <p className="text-sm text-gray-600">Secure storage facilities</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +121,7 @@ const HeroSection = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-white/60" />
+        <ArrowDown className="h-6 w-6 text-secondary" />
       </div>
     </section>
   );

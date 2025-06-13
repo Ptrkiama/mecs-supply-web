@@ -16,24 +16,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 40%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 100% 50%;
+    --secondary: 45 100% 50%;
     --secondary-foreground: 0 0% 0%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 15 100% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 100% 40%;
+    --ring: 210 100% 50%;
 
     --radius: 0.5rem;
 
@@ -89,14 +89,58 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  background: linear-gradient(135deg, 
+    hsl(210 100% 50%) 0%, 
+    hsl(45 100% 50%) 50%, 
+    hsl(15 100% 60%) 100%);
+}
+
+.containers-bg {
+  background-image: url('/lovable-uploads/54e093d8-6f8f-4979-835d-2b3940edcdde.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logistics-bg {
+  background-image: url('/lovable-uploads/59c90f32-c64c-4da2-965f-9fbec1988cb1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-color: hsl(45 100% 50%);
+}
+
+.hot-deal-banner {
+  background: linear-gradient(45deg, hsl(15 100% 60%) 0%, hsl(0 85% 60%) 100%);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+}
+
+.mgs-logo {
+  background: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(45 100% 50%) 100%);
+  border-radius: 12px;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating-element {
+  animation: float 3s ease-in-out infinite;
 }

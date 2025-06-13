@@ -27,11 +27,11 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+255 123 456 789</span>
+              <span>0658 642499 / 0775 642499</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
-              <span>info@mecsgeneralsupply.com</span>
+              <span>mecsluz@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -45,13 +45,13 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
+            <Link to="/" className="flex items-center space-x-3">
+              <div className="mgs-logo w-12 h-12 flex items-center justify-center">
+                <span className="text-white font-bold text-lg">MGS</span>
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Mecs General Supply</h1>
-                <p className="text-xs text-gray-600">Clearing & Forwarding</p>
+                <p className="text-xs text-primary font-semibold">NATIONAL & INTERNATIONAL</p>
               </div>
             </Link>
 
@@ -70,7 +70,7 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-secondary hover:bg-secondary/90 text-black">
+              <Button className="bg-secondary hover:bg-secondary/90 text-black font-bold">
                 Get Quote
               </Button>
             </div>
@@ -101,7 +101,7 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-secondary hover:bg-secondary/90 text-black">
+              <Button className="w-full mt-4 bg-secondary hover:bg-secondary/90 text-black font-bold">
                 Get Quote
               </Button>
             </div>
