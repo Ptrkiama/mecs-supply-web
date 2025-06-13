@@ -72,9 +72,11 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-secondary hover:bg-secondary/90 text-black font-bold">
-                Get Quote
-              </Button>
+              <Link to="/get-quote">
+                <Button className="bg-secondary hover:bg-secondary/90 text-black font-bold">
+                  Get Quote
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -103,9 +105,11 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-secondary hover:bg-secondary/90 text-black font-bold">
-                Get Quote
-              </Button>
+              <Link to="/get-quote" onClick={() => setIsOpen(false)}>
+                <Button className="w-full mt-4 bg-secondary hover:bg-secondary/90 text-black font-bold">
+                  Get Quote
+                </Button>
+              </Link>
             </div>
           </div>
         )}
