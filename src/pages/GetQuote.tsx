@@ -239,24 +239,6 @@ const GetQuote = () => {
                           />
                         </div>
                       </div>
-
-                      <div>
-                        <label htmlFor="urgency" className="block text-sm font-medium mb-2">
-                          Urgency Level *
-                        </label>
-                        <select
-                          id="urgency"
-                          name="urgency"
-                          value={formData.urgency}
-                          onChange={handleChange}
-                          className="w-full p-2 border border-gray-300 rounded-md"
-                          required
-                        >
-                          <option value="standard">Standard (5-7 days)</option>
-                          <option value="express">Express (2-3 days)</option>
-                          <option value="urgent">Urgent (1-2 days)</option>
-                        </select>
-                      </div>
                     </div>
 
                     <div>

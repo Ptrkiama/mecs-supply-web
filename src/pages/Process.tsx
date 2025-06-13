@@ -101,38 +101,6 @@ const Process = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Typical Timeline
-            </h2>
-            <p className="text-xl text-gray-600">
-              Our efficient process ensures quick turnaround times
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">24hrs</div>
-              <h3 className="text-xl font-bold mb-2">Quote Response</h3>
-              <p className="text-gray-600">Quick assessment and detailed quotation</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">2-5 days</div>
-              <h3 className="text-xl font-bold mb-2">Documentation</h3>
-              <p className="text-gray-600">Complete paperwork and permits processing</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">1-3 days</div>
-              <h3 className="text-xl font-bold mb-2">Clearance</h3>
-              <p className="text-gray-600">Customs clearance and final delivery</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );

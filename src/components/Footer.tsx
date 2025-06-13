@@ -47,7 +47,6 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
               <li><Link to="/process" className="text-gray-300 hover:text-white transition-colors">Our Process</Link></li>
-              <li><Link to="/testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -72,18 +71,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <div className="text-gray-300">
-                  <p>Mecs General Supply Building</p>
-                  <p>Nyerere Road, Dar es Salaam</p>
-                  <p>Tanzania</p>
+                  <p>Mecs General Supply</p>
+                  <p>Custom Road or Bandari Road</p>
+                  <p>Tanga, Tanzania</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">+255 123 456 789</span>
+                <span className="text-gray-300">+255 658 6424 99</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">info@mecsgeneralsupply.com</span>
+                <span className="text-gray-300">mecsluz@gmail.com</span>
               </div>
             </div>
           </div>
@@ -95,7 +94,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Mecs General Supply. All rights reserved.
+              © {currentYear} Pk Consulting. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

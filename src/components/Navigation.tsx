@@ -13,7 +13,6 @@ const Navigation = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Process', path: '/process' },
-    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -53,7 +52,7 @@ const Navigation = () => {
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Mecs General Supply</h1>
-                <p className="text-xs text-primary font-semibold">NATIONAL & INTERNATIONAL</p>
+                <p className="text-xs text-primary font-semibold">SAFIRISHA MIZIGO YAKO HARAKA NA MECS</p>
               </div>
             </Link>
 

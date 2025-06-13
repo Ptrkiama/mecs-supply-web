@@ -146,9 +146,9 @@ const ContactForm = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Our Office</h3>
                     <p className="text-gray-600">
-                      Mecs General Supply Building<br />
-                      Nyerere Road, Dar es Salaam<br />
-                      Tanzania
+                      Mecs General Supply<br />
+                      Custom Road or Bandari Road<br />
+                      Tanga, Tanzania
                     </p>
                   </div>
                 </div>
@@ -164,9 +164,8 @@ const ContactForm = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Phone & Email</h3>
                     <p className="text-gray-600">
-                      Phone: +255 123 456 789<br />
+                      Phone: +255 658 642 499<br />
                       Email: info@mecsgeneralsupply.com<br />
-                      Emergency: +255 987 654 321
                     </p>
                   </div>
                 </div>

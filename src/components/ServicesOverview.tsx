@@ -54,7 +54,7 @@ const ServicesOverview = () => {
             Comprehensive Logistics Solutions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            SAFIRISHA MIZIGO YAKO NA MECS GENERAL SUPPLY - We provide all kinds of supplying, 
+            We provide all kinds of supplying, 
             a full service to supply factories, companies, hospitals, oil companies etc.
           </p>
         </div>
