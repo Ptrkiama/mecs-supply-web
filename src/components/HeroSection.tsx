@@ -16,10 +16,6 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
-            <div className="hot-deal-banner inline-block px-6 py-2 mb-6">
-              <span className="text-white font-bold text-sm">HOT DEAL</span>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               <span className="text-secondary block">MECS</span>
               <span className="text-secondary block">GENERAL SUPPLY</span>
@@ -28,26 +24,12 @@ const HeroSection = () => {
             
             <div className="mb-8">
               <h2 className="text-xl md:text-2xl font-bold text-secondary mb-4">
-                WE MAKE YOUR CARGO TRANSPORTATION
+                The Best Clearing & Forwarding Company In East Africa
               </h2>
               <p className="text-3xl md:text-4xl font-bold text-accent">
                 SAFE & FAST
               </p>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-black font-bold">
-                MAWASILIANO
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-secondary text-secondary hover:bg-secondary hover:text-black font-bold"
-              >
-                Our Services
-              </Button>
-            </div>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-2">
