@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
@@ -320,7 +319,7 @@ const GetQuote = () => {
                     Our experts are ready to assist you with your logistics needs.
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p>📞 0658 642499 / 0775 642499</p>
+                    <p>📞 +255 658 642 499</p>
                     <p>✉️ mecsluz@gmail.com</p>
                   </div>
                 </CardContent>

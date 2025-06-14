@@ -26,7 +26,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>0658 642499 / 0775 642499</span>
+              <span>+255 658 642 499 </span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
@@ -46,9 +46,9 @@ const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/ba53eb55-9a4f-49cc-9682-1d123e936b74.png" 
+                src="/lovable-uploads/logo.png" 
                 alt="Mecs General Supply Logo" 
-                className="w-12 h-12 object-contain"
+                className="w-30 h-24 object-contain"
               />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Mecs General Supply</h1>

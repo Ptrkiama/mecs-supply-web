@@ -17,14 +17,41 @@ const ContactForm = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("https://formspree.io/f/mjkrrvlj", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
     });
-    setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-  };
+
+    if (response.ok) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+      });
+      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+    } else {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Failed to send message. Please check your network and try again.",
+      variant: "destructive",
+    });
+  }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -165,7 +192,7 @@ const ContactForm = () => {
                     <h3 className="font-bold text-lg mb-2">Phone & Email</h3>
                     <p className="text-gray-600">
                       Phone: +255 658 642 499<br />
-                      Email: info@mecsgeneralsupply.com<br />
+                      Email: mecsluz@gmail.com<br />
                     </p>
                   </div>
                 </div>
