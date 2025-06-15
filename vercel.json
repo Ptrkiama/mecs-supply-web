@@ -11,10 +11,12 @@
       "destination": "https://mecgeneralsupply.co.tz/$1",
       "permanent": true
     }
-  ]
-}
-{
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
+
