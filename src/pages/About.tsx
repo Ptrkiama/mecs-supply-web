@@ -55,6 +55,14 @@ const About = () => {
       title: 'Mecs General Supply Team',
       image: '/Work/work4.jpg',
     },
+    {
+      title: 'Technical Department',
+      image: '/Work/work5.jpg',
+    },
+    {
+      title: 'IT Department',
+      image: '/Work/work6.jpg',
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
@@ -149,7 +157,7 @@ const About = () => {
              Meet the people who drive our mission and keep operations running smoothly every day.
           </p>
           </div>
-       <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-6">
+       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {projectList.map((project, idx) => (
               <div
                 key={idx}
