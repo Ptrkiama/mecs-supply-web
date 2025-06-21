@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react';
 
@@ -93,9 +92,22 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Pk Consulting. All rights reserved.
-            </p>
+            <div>
+              <p className="text-gray-400 text-sm">
+                © {currentYear} Mecs General Supply. All rights reserved.
+              </p>
+              <p className="text-xs text-gray-500 mt-1">
+                Designed by{" "}
+                <a
+                  href="https://pktechnologies.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                  PK Technologies
+                </a>
+              </p>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>

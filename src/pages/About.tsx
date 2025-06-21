@@ -40,28 +40,20 @@ const About = () => {
 
   const projectList = [
     {
-      title: 'Port Clearance - Dar es Salaam',
-      image: '/images/projects/project1.jpg',
+      title: 'CEO & The Team - Tanga Port',
+      image: '/Work/work1.jpg',
     },
     {
-      title: 'Freight Forwarding to Arusha',
-      image: '/images/projects/project2.jpg',
+      title: 'Operation Officer',
+      image: '/Work/work2.jpg',
     },
     {
-      title: 'Customs Handling for NGO',
-      image: '/images/projects/project3.jpg',
+      title: 'Tanga Port',
+      image: '/Work/work3.jpg',
     },
     {
-      title: 'Heavy Equipment Logistics',
-      image: '/images/projects/project4.jpg',
-    },
-    {
-      title: 'Warehouse Distribution Project',
-      image: '/images/projects/project5.jpg',
-    },
-    {
-      title: 'Emergency Medical Supplies Delivery',
-      image: '/images/projects/project6.jpg',
+      title: 'Mecs General Supply Team',
+      image: '/Work/work4.jpg',
     },
   ];
 
@@ -146,19 +138,18 @@ const About = () => {
         </div>
       </section>
       
-      {/* Projects Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      {/* Our Team Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Recent Projects
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore some of the successful projects we've managed for clients across East Africa.
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Team
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+             Meet the people who drive our mission and keep operations running smoothly every day.
+          </p>
           </div>
-
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+       <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-6">
             {projectList.map((project, idx) => (
               <div
                 key={idx}
