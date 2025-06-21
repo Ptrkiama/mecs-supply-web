@@ -40,15 +40,15 @@ const About = () => {
 
   const projectList = [
     {
-      title: 'CEO & The Team - Tanga Port',
+      title: 'CEO - Mecs',
       image: '/Work/work1.jpg',
     },
     {
-      title: 'Operation Officer',
+      title: 'CEO & The Team - Tanga Port',
       image: '/Work/work2.jpg',
     },
     {
-      title: 'Tanga Port',
+      title: 'Operation Officer',
       image: '/Work/work3.jpg',
     },
     {
