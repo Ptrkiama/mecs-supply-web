@@ -44,24 +44,25 @@ const About = () => {
       image: '/Work/work1.jpg',
     },
     {
-      title: 'CEO & The Team - Tanga Port',
-      image: '/Work/work2.jpg',
-    },
-    {
-      title: 'Operation Officer',
-      image: '/Work/work3.jpg',
-    },
-    {
-      title: 'Mecs General Supply Team',
-      image: '/Work/work4.jpg',
-    },
-    {
       title: 'Technical Department',
       image: '/Work/work5.jpg',
     },
     {
+      title: 'Operation Department',
+      image: '/Work/work3.jpg',
+    },
+    {
       title: 'IT Department',
       image: '/Work/work6.jpg',
+      },
+    {
+      title: 'Mecs General Supply Team',
+      image: '/Work/work4.jpg',
+      
+      },
+    {
+      title: 'CEO & The Team - Tanga Port',
+      image: '/Work/work2.jpg', 
     },
   ];
 
